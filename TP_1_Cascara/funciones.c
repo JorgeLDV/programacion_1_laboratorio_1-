@@ -1,5 +1,13 @@
 #include<stdio.h>
 
+/** \brief shows the menu
+ *
+ * \param _1erOperando is the value of A (first operand)
+ * \param _2doOperando is the value of B (second operand)
+ * \return returns the selected option
+ *
+ */
+
 int menu(float _1operando, float _2operando)
 {
     int opcion;
@@ -22,8 +30,15 @@ int menu(float _1operando, float _2operando)
     }while(opcion<1 || opcion>9);
 
         return opcion;
-
 }
+
+/** \brief calls and read the first operand
+ *
+ * \param not receive any parameters
+ * \param
+ * \return returns numero1 (the value of first operand)
+ *
+ */
 
 float PrimerOperando()
 {
@@ -35,6 +50,14 @@ float PrimerOperando()
      return numero1;
 }
 
+/** \brief calls and read the second operand
+ *
+ * \param not receive any parameters
+ * \param
+ * \return returns numero2 (the value of second operando)
+ *
+ */
+
 float SegundoOperando()
 {
     float numero2;
@@ -45,11 +68,11 @@ float SegundoOperando()
     return numero2;
 }
 
-/** \brief the user requests a number and returns the result
+/** \brief performs operations of addition
  *
- * \param num1
- * \param
- * \return
+ * \param x is the first operand
+ * \param y is the second operand
+ * \return returns the result of the operation
  *
  */
 
@@ -61,6 +84,14 @@ float sumar(float x, float y)
     return suma;
 }
 
+/** \brief performs operations of subtraction
+ *
+ * \param x is the first operand
+ * \param y is the second operand
+ * \return returns the result of the operation
+ *
+ */
+
 float restar(float x, float y)
 {
     float resta;
@@ -69,6 +100,14 @@ float restar(float x, float y)
     return resta;
 }
 
+/** \brief performs operations of division
+ *
+ * \param x is the first operand
+ * \param y is the second operand
+ * \return returns the result of the operation
+ *
+ */
+ 
 float dividir(float x, float y)
 {
     float division;
@@ -77,6 +116,14 @@ float dividir(float x, float y)
     return division;
 }
 
+/** \brief performs operations of multiplication
+ *
+ * \param x is the first operand
+ * \param y is the second operand
+ * \return returns the result of the operation
+ *
+ */
+
 float multiplicar(float x, float y)
 {
     float multiplicacion;
@@ -84,6 +131,14 @@ float multiplicar(float x, float y)
 
     return multiplicacion;
 }
+
+/** \brief performs factoring operates
+ *
+ * \param x is the first operand
+ * \param
+ * \return returns the result of the operation
+ *
+ */
 
 float factorizar(float x)
 {
@@ -94,6 +149,6 @@ float factorizar(float x)
     {
         acum = acum*i;
     }
-
+    
     return acum;
 }
